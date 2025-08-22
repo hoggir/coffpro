@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Arabica Gold Premium",
+      "price": 89000,
+      "originalPrice": 120000,
+      "description": "Kopi arabica premium dari pegunungan Gayo dengan cita rasa yang kaya dan aroma yang menggugah selera.",
+      "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=400&fit=crop&auto=format&q=80",
+      "rating": 4.8,
+      "reviews": 127,
+      "origin": "Gayo, Aceh",
+      "roastLevel": "Medium",
+      "weight": "250g"
+    },
+    {
+      "id": 2,
+      "name": "Robusta Heritage",
+      "price": 65000,
+      "originalPrice": 85000,
+      "description": "Kopi robusta organik dengan karakter bold dan crema yang sempurna untuk espresso lovers.",
+      "image": "/gambar-yang-tidak-ada.jpg",
+      "rating": 4.6,
+      "reviews": 89,
+      "origin": "Lampung",
+      "roastLevel": "Dark",
+      "weight": "250g"
+    },
+    {
+      "id": 3,
+      "name": "Blend Nusantara",
+      "price": 75000,
+      "originalPrice": 95000,
+      "description": "Campuran istimewa arabica dan robusta terbaik Indonesia dengan balance yang sempurna.",
+      "image": "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=400&h=400&fit=crop&auto=format&q=80",
+      "rating": 4.7,
+      "reviews": 156,
+      "origin": "Blend Indonesia",
+      "roastLevel": "Medium-Dark",
+      "weight": "250g"
+    }
+  ]
+}

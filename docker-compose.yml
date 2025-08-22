@@ -1,0 +1,40 @@
+services:
+  coffpro-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: coffpro-production
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+    networks:
+      - coffpro-network
+
+  coffpro-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: coffpro-development
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    restart: unless-stopped
+    networks:
+      - coffpro-network
+    profiles:
+      - dev
+
+networks:
+  coffpro-network:
+    driver: bridge
