@@ -58,7 +58,7 @@ function ProductCard({ product, onAddToCart }) {
 
       <div className="relative">
         <div className="w-full h-64 relative">
-          <Image
+          <img
             src={product.image}
             alt={`${product.name} - Kopi ${product.origin} (Roast ${product.roastLevel})`}
             className="object-cover"
